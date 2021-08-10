@@ -1,0 +1,26 @@
+<div class="mt-4">
+    <h3 style="text-align: center;">Trang Đăng Ký Gái Xinh</h3>
+    <form class="form-group" method="POST" action="/courses/store" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" id="name" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="description" class="form-label">Discription</label>
+            <textarea name="description" class="form-control" id="description" rows="4" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="slug" class="form-label">Slug</label>
+            <input type="text" name="slug" class="form-control" id="slug" required>
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload IMG</label>
+            <input type="file" name="image" class="form-control" aria-label="file example" required>
+            <div class="invalid-feedback">Example invalid form file feedback</div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Lưu Dữ Liệu</button>
+        </div>
+    </form>
+</div>

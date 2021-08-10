@@ -4,13 +4,11 @@ async function connect() {
   try {
     await mongoose.connect('mongodb://127.0.0.1:27017/blogs_dev', {
       useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useFindAndModify: false,
-      useCreateIndex: true,
+      useUnifiedTopology: true
     });
     console.log('Conect successfullly !!');
   } catch (error) {
-    console.log('Conect error !!');
+   console.log(error)
   }
 }
 module.exports = { connect };

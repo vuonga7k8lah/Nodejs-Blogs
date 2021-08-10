@@ -13,18 +13,18 @@ db.connect();
 
 //sử lý dữ liệu form-data bắn lên
 app.use(
-  express.urlencoded({
-    extended: true,
-  }),
+    express.urlencoded({
+        extended: true,
+    }),
 );
 app.use(express.json());
 
 // hanndlebar
 app.engine(
-  'hbs',
-  handlebar({
-    extname: '.hbs',
-  }),
+    'hbs',
+    handlebar({
+        extname: '.hbs',
+    }),
 );
 app.set('view engine', 'hbs');
 //set lai duong dan
